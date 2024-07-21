@@ -57,6 +57,13 @@
 		/obj/item/gun/magic/staff/shrink,
 		/obj/item/gun/ballistic/shotgun/hook,
 		/obj/item/gun/ballistic/automatic/surplus,
+		/obj/item/climbing_hook/emergency,
+		/obj/item/knife/combat/cyborg,
+		/obj/item/organ/internal/monster_core/regenerative_core,
+		/obj/item/assembly/flash/cyborg,
+		/obj/item/instrument/saxophone/spectral,
+		/obj/item/instrument/trombone/spectral,
+		/obj/item/melee/energy/sword/cyborg,
 	)
 
 /datum/unit_test/suit_storage_icons/Run()
