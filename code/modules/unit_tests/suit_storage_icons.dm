@@ -64,6 +64,9 @@
 		/obj/item/instrument/saxophone/spectral,
 		/obj/item/instrument/trombone/spectral,
 		/obj/item/melee/energy/sword/cyborg,
+		/obj/item/climbing_hook/infinite,
+		/obj/item/assembly/flash/handheld,
+		/obj/item/melee/energy/sword/saber,
 	)
 
 /datum/unit_test/suit_storage_icons/Run()
