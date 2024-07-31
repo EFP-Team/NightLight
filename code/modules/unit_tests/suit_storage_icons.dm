@@ -67,6 +67,12 @@
 		/obj/item/climbing_hook/infinite,
 		/obj/item/assembly/flash/handheld,
 		/obj/item/melee/energy/sword/saber,
+		/obj/item/knife/combat/root,
+		/obj/item/delivery/small,
+		/obj/item/assembly/flash/armimplant,
+		/obj/item/melee/energy/sword/saber/red,
+		/obj/item/gun/ballistic/shotgun/musket,
+		/obj/item/gun/ballistic/rifle/boltaction/donkrifle,
 	)
 
 /datum/unit_test/suit_storage_icons/Run()
