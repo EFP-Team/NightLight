@@ -2,77 +2,6 @@
 /datum/unit_test/suit_storage_icons
 	///These types need to be done, but it's been years so lets just grandfather them in until we get sprites made.
 	var/list/explicit_types_to_ignore = list(
-		/obj/item/storage/bag/rebar_quiver,
-		/obj/item/climbing_hook,
-		/obj/item/climbing_hook/syndicate,
-		/obj/item/grapple_gun,
-		/obj/item/knife/combat,
-		/obj/item/knife/combat/survival,
-		/obj/item/organ/internal/monster_core,
-		/obj/item/organ/internal/monster_core/brimdust_sac,
-		/obj/item/organ/internal/monster_core/regenerative_core/legion,
-		/obj/item/organ/internal/monster_core/rush_gland,
-		/obj/item/experi_scanner,
-		/obj/item/assembly/flash,
-		/obj/item/assembly/flash/memorizer,
-		/obj/item/melee/baton/security/cattleprod/telecrystalprod,
-		/obj/item/food/grown/banana,
-		/obj/item/food/grown/banana/bombanana,
-		/obj/item/food/grown/banana/mime,
-		/obj/item/food/grown/banana/bluespace,
-		/obj/item/food/grown/banana/bunch,
-		/obj/item/food/grown/banana/bunch/monkeybomb,
-		/obj/item/grown/bananapeel,
-		/obj/item/grown/bananapeel/bombanana,
-		/obj/item/grown/bananapeel/mimanapeel,
-		/obj/item/grown/bananapeel/bluespace,
-		/obj/item/grown/bananapeel/specialpeel,
-		/obj/item/instrument/violin,
-		/obj/item/instrument/violin/golden,
-		/obj/item/instrument/violin/festival,
-		/obj/item/instrument/banjo,
-		/obj/item/instrument/guitar,
-		/obj/item/instrument/eguitar,
-		/obj/item/instrument/glockenspiel,
-		/obj/item/instrument/accordion,
-		/obj/item/instrument/trumpet,
-		/obj/item/instrument/trumpet/spectral,
-		/obj/item/instrument/saxophone,
-		/obj/item/instrument/trombone,
-		/obj/item/instrument/recorder,
-		/obj/item/instrument/harmonica,
-		/obj/item/instrument/bikehorn,
-		/obj/item/instrument/musicalmoth,
-		/obj/item/instrument/piano_synth,
-		/obj/item/instrument/bilehorn,
-		/obj/item/melee/energy/sword,
-		/obj/item/melee/energy/sword/cyborg/saw,
-		/obj/item/melee/energy/sword/pirate,
-		/obj/item/shield/energy,
-		/obj/item/shield/energy/advanced,
-		/obj/item/shield/energy/bananium,
-		/obj/item/gun/magic/staff/chaos/true_wabbajack,
-		/obj/item/gun/magic/staff/locker,
-		/obj/item/gun/magic/staff/flying,
-		/obj/item/gun/magic/staff/shrink,
-		/obj/item/gun/ballistic/shotgun/hook,
-		/obj/item/gun/ballistic/automatic/surplus,
-		/obj/item/climbing_hook/emergency,
-		/obj/item/knife/combat/cyborg,
-		/obj/item/organ/internal/monster_core/regenerative_core,
-		/obj/item/assembly/flash/cyborg,
-		/obj/item/instrument/saxophone/spectral,
-		/obj/item/instrument/trombone/spectral,
-		/obj/item/melee/energy/sword/cyborg,
-		/obj/item/climbing_hook/infinite,
-		/obj/item/assembly/flash/handheld,
-		/obj/item/melee/energy/sword/saber,
-		/obj/item/knife/combat/root,
-		/obj/item/delivery/small,
-		/obj/item/assembly/flash/armimplant,
-		/obj/item/melee/energy/sword/saber/red,
-		/obj/item/gun/ballistic/shotgun/musket,
-		/obj/item/gun/ballistic/rifle/boltaction/donkrifle,
 	)
 
 /datum/unit_test/suit_storage_icons/Run()
@@ -92,7 +21,6 @@
 		mod_theme = GLOB.mod_themes[mod_theme]
 		wearable_item_paths |= mod_theme.allowed_suit_storage
 
-	var/list/already_warned_icons = list()
 	for(var/obj/item/item_path as anything in typecacheof(wearable_item_paths))
 		if(initial(item_path.item_flags) & ABSTRACT)
 			continue
@@ -106,8 +34,6 @@
 
 		if(isnull(icon_state))
 			continue //no sprite for the item.
-		if(icon_state in already_warned_icons)
-			continue
 
 		if(worn_icon) //easiest to check since we override everything.
 			if(!(icon_state in icon_states(worn_icon)))
@@ -115,5 +41,5 @@
 			continue
 
 		if(!(icon_state in icon_states('icons/mob/clothing/belt_mirror.dmi')))
-			already_warned_icons += icon_state
-			TEST_FAIL("[item_path] using invalid [worn_icon_state ? "worn_icon_state" : "icon_state"], \"[icon_state]\"")
+			var/has_belt_icon = (icon_state in icon_states('icons/mob/clothing/belt.dmi'))
+			TEST_FAIL("[item_path] using a missing texture placeholder due to invalid [worn_icon_state ? "worn_icon_state" : "icon_state"], \"[icon_state]\"[has_belt_icon ? ". Has a valid normal belt icon." : null]")
