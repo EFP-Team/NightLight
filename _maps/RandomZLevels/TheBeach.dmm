@@ -278,16 +278,6 @@
 /obj/structure/musician/piano,
 /turf/open/floor/wood,
 /area/awaymission/beach)
-"dx" = (
-/obj/structure/sign/directions/dorms/north_arrow{
-	pixel_y = 35
-	},
-/obj/structure/sign/directions/medical/north_arrow{
-	pixel_y = 29
-	},
-/obj/machinery/computer/slot_machine,
-/turf/open/floor/wood/large,
-/area/awaymission/beach)
 "dL" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Locker Room"
@@ -505,10 +495,6 @@
 	},
 /turf/closed/wall/mineral/wood,
 /area/awaymission/beach)
-"gq" = (
-/obj/item/broken_bottle,
-/turf/open/misc/beach/sand,
-/area/awaymission/beach)
 "gw" = (
 /obj/item/stack/sheet/mineral/sandstone{
 	pixel_x = -8
@@ -548,6 +534,16 @@
 	dir = 6
 	},
 /turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"hd" = (
+/obj/structure/sign/directions/dorms/north_arrow{
+	pixel_y = 35
+	},
+/obj/structure/sign/directions/medical/north_arrow{
+	pixel_y = 29
+	},
+/obj/machinery/computer/slot_machine,
+/turf/open/floor/wood/large,
 /area/awaymission/beach)
 "hf" = (
 /obj/effect/turf_decal/siding/wood/corner,
@@ -809,6 +805,11 @@
 	pixel_y = -6
 	},
 /obj/structure/fluff/beach_umbrella/cap,
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"kn" = (
+/obj/effect/mob_spawn/corpse/human/old_pirate_captain,
+/obj/structure/bed/maint,
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "ko" = (
@@ -1179,6 +1180,10 @@
 /obj/item/trash/candy,
 /turf/open/floor/eighties,
 /area/awaymission/beach)
+"oL" = (
+/obj/effect/spawner/random/trash/cigbutt,
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "oX" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
 /obj/machinery/button/door/directional/west{
@@ -1193,10 +1198,6 @@
 /obj/effect/turf_decal/siding/dark_red{
 	dir = 8
 	},
-/turf/open/misc/beach/sand,
-/area/awaymission/beach)
-"pq" = (
-/obj/effect/spawner/random/trash/cigbutt,
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "pr" = (
@@ -2210,6 +2211,10 @@
 /obj/machinery/vending/dinnerware,
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
+"Cn" = (
+/obj/item/broken_bottle,
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
 "Cp" = (
 /obj/structure/fluff/beach_umbrella/syndi,
 /turf/open/misc/beach/coast/corner{
@@ -2864,17 +2869,6 @@
 /obj/machinery/light/directional/west,
 /turf/open/floor/wood/large,
 /area/awaymission/beach)
-"Jv" = (
-/obj/item/paper/fluff/old_pirate_note{
-	pixel_x = -5;
-	pixel_y = -7
-	},
-/obj/item/pen/fountain{
-	pixel_y = -11;
-	pixel_x = -8
-	},
-/turf/open/misc/beach/sand,
-/area/awaymission/beach)
 "JF" = (
 /obj/structure/marker_beacon/burgundy,
 /turf/open/water/beach,
@@ -2987,6 +2981,17 @@
 /area/awaymission/beach)
 "KW" = (
 /obj/structure/fluff/beach_umbrella/syndi,
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"KZ" = (
+/obj/item/paper/fluff/old_pirate_note{
+	pixel_x = -5;
+	pixel_y = -7
+	},
+/obj/item/pen/fountain{
+	pixel_y = -11;
+	pixel_x = -8
+	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "La" = (
@@ -3349,12 +3354,6 @@
 	},
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
-"Pb" = (
-/obj/item/fishing_rod,
-/obj/structure/closet/crate/trashcart,
-/obj/item/reagent_containers/cup/glass/bottle/rum/aged,
-/turf/open/misc/beach/sand,
-/area/awaymission/beach)
 "Pe" = (
 /turf/open/misc/beach/coast{
 	dir = 5
@@ -3401,11 +3400,6 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
-/turf/open/misc/beach/sand,
-/area/awaymission/beach)
-"PU" = (
-/obj/effect/mob_spawn/corpse/human/old_pirate_captain,
-/obj/structure/bed/maint,
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "Qe" = (
@@ -4044,6 +4038,12 @@
 	pixel_y = -5
 	},
 /obj/structure/fluff/beach_umbrella/syndi,
+/turf/open/misc/beach/sand,
+/area/awaymission/beach)
+"ZE" = (
+/obj/item/fishing_rod,
+/obj/structure/closet/crate/trashcart,
+/obj/item/reagent_containers/cup/glass/bottle/rum/aged,
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "ZH" = (
@@ -7445,8 +7445,8 @@ XB
 XB
 Vf
 YV
-Pb
-gq
+ZE
+Cn
 hL
 ni
 XB
@@ -7702,8 +7702,8 @@ XB
 XB
 Vf
 VY
-pq
-PU
+oL
+kn
 Er
 BK
 XB
@@ -7959,7 +7959,7 @@ XB
 XB
 Vf
 VY
-Jv
+KZ
 VY
 VY
 BK
@@ -8217,7 +8217,7 @@ XB
 Vf
 IZ
 VY
-pq
+oL
 VY
 BK
 XB
@@ -13240,7 +13240,7 @@ xv
 xv
 xv
 xv
-dx
+hd
 Zp
 Zp
 mb

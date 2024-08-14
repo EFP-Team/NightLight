@@ -230,8 +230,8 @@ WALL_MOUNT_DIRECTIONAL_HELPERS(/obj/item/radio/intercom)
 	desc = "A custom-made Syndicate-issue intercom used to transmit on all Nanotrasen frequencies. Particularly expensive."
 	freerange = TRUE
 
-WALL_MOUNT_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/prison)
-WALL_MOUNT_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/chapel)
-WALL_MOUNT_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/command)
-WALL_MOUNT_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/syndicate)
-WALL_MOUNT_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/syndicate/freerange)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/prison, 27)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/chapel, 27)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/command, 27)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/syndicate, 27)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/syndicate/freerange, 27)
