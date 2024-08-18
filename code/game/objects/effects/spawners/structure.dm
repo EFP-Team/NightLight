@@ -180,6 +180,11 @@ again.
 	icon_state = "plastitaniumwindow_spawner"
 	spawn_list = list(/obj/structure/window_frame/plastitanium/grille_and_window)
 
+/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium/indestructible
+	name = "indestructible plastitanium window spawner"
+	icon_state = "plastitaniumwindow_spawner"
+	spawn_list = list(/obj/structure/grille/indestructible, /obj/structure/window/reinforced/plasma/plastitanium/indestructible)
+
 //paper window
 
 /obj/effect/spawner/structure/window/paper
