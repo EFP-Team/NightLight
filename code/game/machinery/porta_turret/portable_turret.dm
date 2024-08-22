@@ -750,8 +750,8 @@ DEFINE_BITFIELD(turret_flags, list(
 	mode = TURRET_LETHAL
 	stun_projectile = /obj/projectile/bullet
 	lethal_projectile = /obj/projectile/bullet
-	lethal_projectile_sound = 'sound/weapons/gun/pistol/shot.ogg'
-	stun_projectile_sound = 'sound/weapons/gun/pistol/shot.ogg'
+	lethal_projectile_sound = 'sound/weapons/gun/pistol/pistol_fire1.ogg'
+	stun_projectile_sound = 'sound/weapons/gun/pistol/pistol_fire1.ogg'
 	icon_state = "syndie_off"
 	base_icon_state = "syndie"
 	faction = list(ROLE_SYNDICATE)
@@ -809,9 +809,9 @@ DEFINE_BITFIELD(turret_flags, list(
 
 /obj/machinery/porta_turret/syndicate/irs
 	lethal_projectile = /obj/projectile/bullet/c10mm/ap
-	lethal_projectile_sound = 'sound/weapons/gun/smg/shot.ogg'
+	lethal_projectile_sound = 'sound/weapons/gun/smg/smg_fire1.ogg'
 	stun_projectile = /obj/projectile/bullet/c10mm/ap
-	stun_projectile_sound = 'sound/weapons/gun/smg/shot.ogg'
+	stun_projectile_sound = 'sound/weapons/gun/smg/smg_fire1.ogg'
 	armor_type = /datum/armor/syndicate_turret
 	faction = list(FACTION_PIRATE)
 
@@ -820,8 +820,8 @@ DEFINE_BITFIELD(turret_flags, list(
 	shot_delay = 3
 	stun_projectile = /obj/projectile/bullet/p50/penetrator/shuttle
 	lethal_projectile = /obj/projectile/bullet/p50/penetrator/shuttle
-	lethal_projectile_sound = 'sound/weapons/gun/smg/shot.ogg'
-	stun_projectile_sound = 'sound/weapons/gun/smg/shot.ogg'
+	lethal_projectile_sound = 'sound/weapons/gun/smg/smg_fire1.ogg'
+	stun_projectile_sound = 'sound/weapons/gun/smg/smg_fire1.ogg'
 	armor_type = /datum/armor/syndicate_shuttle
 
 /datum/armor/syndicate_shuttle
