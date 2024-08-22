@@ -51,6 +51,7 @@
 	var/run_later = FALSE
 
 	var/significant_share_ticker = 0
+	COOLDOWN_DECLARE(fire_puff_cooldown)
 	#ifdef TRACK_MAX_SHARE
 	var/max_share = 0
 	#endif
@@ -391,8 +392,6 @@
 					enemy_tile.consider_pressure_difference(src, -difference)
 			//This acts effectivly as a very slow timer, the max deltas of the group will slowly lower until it breaksdown, they then pop up a bit, and fall back down until irrelevant
 			LAST_SHARE_CHECK
-
-
 	/******************* GROUP HANDLING FINISH *********************************************************************/
 
 	if (planetary_atmos) //share our air with the "atmosphere" "above" the turf
@@ -759,6 +758,8 @@ Then we space some of our heat, and think about if we should stop conducting.
 	var/heat = conduction_coefficient * CALCULATE_CONDUCTION_ENERGY(delta_temperature, heat_capacity, sharer.heat_capacity)
 	temperature += heat / heat_capacity //The higher your own heat cap the less heat you get from this arrangement
 	sharer.temperature -= heat / sharer.heat_capacity
+
+
 
 #undef LAST_SHARE_CHECK
 #undef PLANET_SHARE_CHECK
