@@ -156,6 +156,8 @@
 		"apc_control",
 		"powermonitor",
 		"smes",
+		"portable_smes",
+		"power_connector",
 		"emitter",
 		"grounding_rod",
 		"tesla_coil",
