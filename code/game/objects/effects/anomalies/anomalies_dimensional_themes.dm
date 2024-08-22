@@ -277,6 +277,13 @@
 	sound = 'sound/items/eatfood.ogg'
 	replace_walls = /turf/closed/wall/mineral/pizza
 
+/datum/dimension_theme/cheese
+	name = "Cheese"
+	icon = 'icons/obj/food/food.dmi'
+	icon_state = "cheesewheel"
+	material = /datum/material/cheese
+	sound = 'sound/items/eatfood.ogg'
+
 /datum/dimension_theme/natural
 	name = "Natural"
 	icon = 'icons/obj/service/hydroponics/harvest.dmi'
