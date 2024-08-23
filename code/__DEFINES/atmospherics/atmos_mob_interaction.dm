@@ -47,7 +47,8 @@
 /// The maximum temperature of Lavaland
 #define LAVALAND_MAX_TEMPERATURE 350
 /// The minimum temperature of Icebox
-#define ICEBOX_MIN_TEMPERATURE 180
+#define ICEBOX_MIN_TEMPERATURE 250
+#define ICEBOX_MAX_TEMPERATURE 300
 
 /// The natural temperature for a body
 #define BODYTEMP_NORMAL 310.15

@@ -5,7 +5,7 @@
 
 /datum/map_config
 	// Metadata
-	var/config_filename = "_maps/metastation.json"
+	var/config_filename = "_maps/icebox.json"
 	var/defaulted = TRUE  // set to FALSE by LoadConfig() succeeding
 	// Config from maps.txt
 	var/config_max_users = 0
@@ -14,15 +14,15 @@
 	var/votable = FALSE
 
 	// Config actually from the JSON - should default to Meta
-	var/map_name = "MetaStation"
-	var/map_path = "map_files/MetaStation"
-	var/map_file = "MetaStation.dmm"
+	var/map_name = "IceBoxStation"
+	var/map_path = "map_files/IceBoxStation"
+	var/map_file = "IceBoxStation.dmm"
 
 	var/traits = null
 	var/space_ruin_levels = DEFAULT_SPACE_RUIN_LEVELS
 	var/space_empty_levels = DEFAULT_SPACE_EMPTY_LEVELS
 	/// Boolean that tells us if this is a planetary station. (like IceBoxStation)
-	var/planetary = FALSE
+	var/planetary = TRUE
 
 	///The type of mining Z-level that should be loaded.
 	var/minetype = "lavaland"

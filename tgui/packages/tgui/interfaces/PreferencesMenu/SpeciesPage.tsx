@@ -247,11 +247,12 @@ const SpeciesPageInner = (props: {
   );
 
   // Humans are always the top of the list
+/*
   const humanIndex = species.findIndex(([species]) => species === 'human');
   const swapWith = species[0];
   species[0] = species[humanIndex];
   species[humanIndex] = swapWith;
-
+*/
   const currentSpecies = species.filter(([speciesKey]) => {
     return speciesKey === data.character_preferences.misc.species;
   })[0][1];

@@ -494,7 +494,7 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 	for(var/area/A as anything in GLOB.areas)
 		A.RunTerrainPopulation()
 
-/datum/controller/subsystem/mapping/proc/maprotate()
+/datum/controller/subsystem/mapping/proc/maprotate() //TODO: Make this smaller for better optimization
 	if(map_voted || SSmapping.next_map_config) //If voted or set by other means.
 		return
 
@@ -551,6 +551,7 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 	if (. && VM.map_name != config.map_name)
 		to_chat(world, span_boldannounce("Map rotation has chosen [VM.map_name] for next round!"))
 
+/*
 /datum/controller/subsystem/mapping/proc/mapvote()
 	if(map_voted || SSmapping.next_map_config) //If voted or set by other means.
 		return
@@ -558,6 +559,7 @@ GLOBAL_LIST_EMPTY(the_station_areas)
 		maprotate()
 		return
 	SSvote.initiate_vote(/datum/vote/map_vote, "automatic map rotation", forced = TRUE)
+*/
 
 /datum/controller/subsystem/mapping/proc/changemap(datum/map_config/change_to)
 	if(!change_to.MakeNextMap())
