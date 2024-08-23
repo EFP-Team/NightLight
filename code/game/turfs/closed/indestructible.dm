@@ -56,7 +56,7 @@
 	icon_state = "corner"
 
 /turf/closed/indestructible/splashscreen
-	name = "Space Station 13"
+	name = "New-York"
 	desc = null
 	baseturfs = /turf/cordon
 	icon = 'icons/blanks/blank_title.png'

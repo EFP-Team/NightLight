@@ -210,8 +210,8 @@ GLOBAL_LIST_EMPTY(features_by_species)
  * If there are no available roundstart species, defaults to human.
  */
 /proc/generate_selectable_species_and_languages()
-	var/list/selectable_species = list()
-
+	var/list/selectable_species = list(SPECIES_HUMAN)
+/*
 	for(var/species_type in subtypesof(/datum/species))
 		var/datum/species/species = GLOB.species_prototypes[species_type]
 		if(species.check_roundstart_eligible())
@@ -223,7 +223,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	GLOB.uncommon_roundstart_languages -= /datum/language/common
 	if(!selectable_species.len)
 		selectable_species += SPECIES_HUMAN
-
+*/
 	return selectable_species
 
 /**

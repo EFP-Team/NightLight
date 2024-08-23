@@ -615,7 +615,8 @@ SUBSYSTEM_DEF(shuttle)
 		[transit_height] in height. The travel dir is [travel_dir]."
 */
 
-	var/transit_path = /turf/open/space/transit
+	var/transit_path = /turf/open/floor/plating // /turf/open/space/transit TODO: Make a moving road
+	/*
 	switch(travel_dir)
 		if(NORTH)
 			transit_path = /turf/open/space/transit/north
@@ -625,6 +626,7 @@ SUBSYSTEM_DEF(shuttle)
 			transit_path = /turf/open/space/transit/east
 		if(WEST)
 			transit_path = /turf/open/space/transit/west
+	*/
 
 	var/datum/turf_reservation/proposal = SSmapping.request_turf_block_reservation(
 		transit_width,
